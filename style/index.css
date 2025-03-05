@@ -147,3 +147,37 @@ header nav ul li:hover{
     padding: 0 1rem;
     padding-bottom: 1.5rem;
 }
+
+.about {
+    min-width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--primary-color));
+    position: relative;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    
+}
+
+.about_background {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 20vh;
+}
+
+.about_foreground{
+    color: var(--text-white);
+    z-index: 2;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+}
+
+.about_foreground h2 {
+    font-weight: bold;
+    margin-bottom: .8rem;
+}
