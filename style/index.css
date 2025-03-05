@@ -3,3 +3,93 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+:root{
+    --primary-color: #030207;
+    --secondary-color: #ffa400;
+    --text-white: #e4d3cc;
+    --title-color: #cfcfc7;
+    --nav-color: #fff5e6;
+    --botton-color: #34221e;
+}
+
+img {
+    width: 200px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    min-width: 100%;
+    padding: 1.5rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 1.6rem;
+    list-style: none;
+}
+
+header nav ul li{
+    cursor: pointer;
+    transition: .8s;
+    color: var(--nav-color);
+}
+
+header nav ul li:hover{
+    color: var(--secondary-color);
+}
+
+.hero{
+    min-width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), var(--primary-color));
+    position: relative;
+    min-height: 100vh;
+}
+
+
+
+.hero_background{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100vh;
+}
+
+.hero_foreground {
+    color: var(--text-white);
+    z-index: 2;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+}
+
+.hero_foreground_title {
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: .2rem;
+    color: var(--title-color);
+}
+
+.hero_foreground_text {
+    color: var(--text-white);
+    margin-bottom: 1.5rem;
+}
+
+.hero_foreground_button{
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: var(--botton-color);
+    padding: .6rem;
+    border-radius: 0.3rem;
+}
+
+.hero_foreground_button:hover{
+    color: var(--primary-color);
+}
+
+
