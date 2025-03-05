@@ -8,28 +8,28 @@
 </head>
 <body>
 
-    <header>
+    <header >
         <nav>
-            <ul>
-                <li>Home</li>
-                <li>Cardápio</li>
-                <li>Sobre Nós</li>
-                <li>Contato</li>
+            <ul >
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#menu">Cardápio</a></li>
+                <li><a href="#about">Sobre Nós</a></li>
+                <li><a href="#contact">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="hero">
+    <div id="hero" class="hero">
         <img class="hero_background" src="./images/background.jpg" alt="">
         <div class="hero_foreground">
             <h1 class="hero_foreground_title">Bem-vindo</h1>
             <p class="hero_foreground_text">saborosas pizzas feitas especialmente para você</p>
-            <a class="hero_foreground_button" href="#">Ver Cardápio</a>
+            <a class="hero_foreground_button" href="#menu">Ver Cardápio</a>
         </div>
         
     </div>
 
-    <section class="menu">
+    <section id="menu" class="menu">
         <h2 class="menu_title">Cardápio</h2>
         
         <div class="pizzas">
@@ -110,7 +110,7 @@
 
     </section>
 
-    <div class="about">
+    <div id="about" class="about">
         <img class="about_background" src="./images/sobre nós.jpg" alt="">
         <div class="about_foreground">
             <h2>Sobre Nós</h2>
@@ -119,15 +119,15 @@
         
     </div>
 
-    <section class="contact">
-        <h3></h3>
-        <p></p>
+    <section id="contact"  class="contact">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco para fazer pedidos ou tirar suas dúvidas.</p>
         <div class="infos">
             <div class="info">
                 <span>Endereço:</span> Avenida onze de outubro, nº 123<br>Centro, Cidade Qualquer/Rj CEP: 12345-678
             </div>
             <div class="info">
-                <span>Telefone:</span>(11) 5555-5555
+                <span>Telefone:</span>(11) 5555-5555<br>
                 <span>E-mail:</span> <a href="">contato@galeria-da-pizza</a>
             </div>
             <div class="info">
@@ -136,7 +136,7 @@
             </div>
 
         </div>
-        <a href="">peça agora mesmo!</a>
+        <a class="contact_button" href="">peça agora mesmo!</a>
     </section>
 
     <footer>

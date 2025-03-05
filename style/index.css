@@ -16,6 +16,10 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     width: 200px;
 }
@@ -25,6 +29,9 @@ header {
     color: var(--text-white);
     min-width: 100%;
     padding: 1.5rem;
+    position: fixed;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
 }
 
 header nav ul {
@@ -34,13 +41,14 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li{
+header nav ul li a{
     cursor: pointer;
     transition: .8s;
     color: var(--nav-color);
+    text-decoration: none;
 }
 
-header nav ul li:hover{
+header nav ul li a:hover{
     color: var(--secondary-color);
 }
 
@@ -89,6 +97,7 @@ header nav ul li:hover{
     color: var(--botton-color);
     padding: .6rem;
     border-radius: 0.3rem;
+    box-shadow: 0 8px 20px rgba(255, 164, 0, 0.8);
 }
 
 .hero_foreground_button:hover{
@@ -99,7 +108,7 @@ header nav ul li:hover{
 .menu_title{
     text-align: center;
     margin-bottom: 1.6rem;
-    margin-top: 5rem;
+    margin-top: 1rem;
 }
 
 .menu {
@@ -133,7 +142,7 @@ header nav ul li:hover{
 }
 
 .pizza:hover{
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.8);
 }
 
 .pizza img {
@@ -163,6 +172,7 @@ header nav ul li:hover{
     justify-content: center;
     text-align: center;
     margin-top: 3rem;
+    margin-bottom: 3rem;
     
 }
 
@@ -188,3 +198,61 @@ header nav ul li:hover{
     margin-bottom: .8rem;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #110200;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info{
+    height: 5rem;
+}
+
+.info span {
+    font-weight: bold;
+}
+
+.info a{
+    color: var(--secondary-color);
+}
+
+.contact_button{
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    color: var(--botton-color);
+    padding: .6rem;
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 20px rgba(255, 164, 0, 0.8);
+
+}
+
+footer {
+    text-align: center;
+    min-width: 100%;
+    background-color: #232323;
+    color: var(--secondary-color);
+    padding: 1rem;
+
+}
